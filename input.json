@@ -1,0 +1,14 @@
+[
+    {
+      "type": "cloze",
+      "text": "<div style=\"font-family: monospace; white-space: pre;\">&lt;!DOCTYPE html&gt;\n&lt;html lang=\"{{c1::en}}\"&gt;\n&lt;head&gt;\n  &lt;meta charset=\"{{c2::UTF-8}}\"&gt;\n  &lt;title&gt;{{c3::My Web Page}}&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;h1&gt;{{c4::Welcome}}&lt;/h1&gt;\n  &lt;p&gt;{{c5::This is a paragraph.}}&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;</div>"
+    },
+    {
+      "type": "cloze",
+      "text": "<div style=\"font-family: monospace; white-space: pre;\">&lt;img src=\"{{c1::image.jpg}}\" alt=\"{{c2::Description of image}}\"&gt;</div>"
+    },
+    {
+      "type": "cloze",
+      "text": "<div style=\"font-family: monospace; white-space: pre;\">&lt;a href=\"{{c1::https://www.example.com}}\"&gt;{{c2::Click here}}&lt;/a&gt;</div>"
+    }
+  ]

@@ -1,0 +1,30 @@
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html lang="{{c1::en}}">
+    <head>
+      <meta charset="{{c2::UTF-8}}">
+      <title>{{c3::My First Web Page}}</title>
+    </head>
+    <body>
+      <!-- {{c4::This is a comment}} -->
+      <h1>{{c5::Welcome to HTML}}</h1>
+      <p>{{c6::This is a paragraph.}}</p>
+    </body>
+    </html>
+
+- type: type-in-the-answer
+  front: |
+    What HTML tag is used to create a hyperlink?
+  back: "a; anchor"
+
+- type: type-in-the-answer
+  front: |
+    Which tag is used to display a level 1 heading?
+  back: "h1"
+
+- type: basic
+  front: |
+    Describe the structure of a basic HTML document.
+  back: |
+    An HTML document starts with <!DOCTYPE html>, followed by <html>, <head>, and <body> sections.
