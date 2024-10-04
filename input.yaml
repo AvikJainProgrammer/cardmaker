@@ -3,13 +3,13 @@
     <!DOCTYPE html>
     <html lang="{{c1::en}}">
     <head>
-      <meta charset="{{c2::UTF-8}}">
-      <title>{{c3::My First Web Page}}</title>
+      <meta charset="{{c1::UTF-8}}">
+      <title>{{c2::My First Web Page}}</title>
     </head>
     <body>
-      <!-- {{c4::This is a comment}} -->
-      <h1>{{c5::Welcome to HTML}}</h1>
-      <p>{{c6::This is a paragraph.}}</p>
+      <!-- {{c3::This is a comment}} -->
+      <h1>{{c4::Welcome to HTML}}</h1>
+      <p>{{c5::This is a paragraph.}}</p>
     </body>
     </html>
 
@@ -28,3 +28,336 @@
     Describe the structure of a basic HTML document.
   back: |
     An HTML document starts with <!DOCTYPE html>, followed by <html>, <head>, and <body> sections.
+
+- type: type-in-the-answer
+  front: |
+    Please write an example function to print hello world
+  back: |
+    "def hello_world():
+      print('Hello World')"
+
+- type: cloze
+  text: |
+    {{c1::<!DOCTYPE html>}}
+    {{c2::<html>}}
+    {{c3::<head>}}
+      {{c4::<title>}}Page title{{c4::</title>}}
+    {{c3::</head>}}
+    {{c5::<body>}}
+      {{c6::<h1>}}Webpage's Heading{{c6::</h1>}}
+      {{c7::<p>}}Content (Your first paragraph).{{c7::</p>}}
+    {{c5::</body>}}
+    {{c2::</html>}} 
+
+- type: basic
+  front: |
+    What is the basic structure of an html page. Create a basic HTML page. 
+  back: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Page title</title>
+    </head>
+    <body>
+      <h1>Webpage's Heading</h1>
+      <p>Content (Your first paragraph).</p>
+    </body>
+    </html>
+  
+- type: basic
+  front: |
+    What is the purpose of <!DOCTYPE html>
+  back: |
+    This element defines the document type as HTML. This element must be written before writing any HTML document.
+  
+- type: basic
+  front: |
+    What is the purpose of <html> ... </html>
+  back: |
+    The <html> tag is the parent tag for all HTML elements. Everything related to create an HTML document must be written inside the <html> tag. CSS, JavaScript, and jQuery must also be written inside this tag.
+  
+- type: basic
+  front: |
+    What is the purpose of <head> ... </head>
+  back: |
+    The <head> tag is a container tag for all those elements that are not directly displayed on the webpage but required for the page functionalities. It contains meta tags (which are used for SEO purposes), title tag, script tags, etc.
+
+- type: basic
+  front: |
+    What is the purpose of <title>...</title>
+  back: |
+    The <title> tag is used to define the title of the webpage that you can see in the browser's tab, bookmarks list, and search engine results. This tag is also very important for SEO purposes to help search engine to understand the content of the webpage.
+
+- type: basic
+  front: |
+    What is the purpose of the <body>...<body> tag.
+  back: |
+    The <body> tag is the container tag for all those elements, which represents the main content of a webpage that displays on the browser.
+
+- type: basic
+  front: |
+    What is the purpose of the <h1>...</h1> tag.
+  back: |
+    The <h1> tag is one of the heading tags. It is the most important heading tag, which defines the main title or headline of the webpage. Any text written inside <h1> and </h1> is a top-level heading of the content.
+
+- type: basic
+  front: |
+    What is the purpose of <p>...</p> tag.
+  back: |
+    The <p> tag defines a paragraph, anything written inside <p> and </p> displays as a paragraph on the webpage. Use multiple <p> tags to display text in different paragraphs.
+
+- type: basic
+  front: |
+    How do we write a comment in html.
+  back: |
+    <!--comment content-->
+
+- type: type-in-the-answer
+  front: |
+    What is the full form of HTML ?
+  back: |
+    "Hyper Text Markup Language"
+ 
+- type: basic
+  front: |
+    What is break tag in HTML ?
+  back: |
+    <br> or <br /> − The <br> tag stands for "break", and it inserts a line break on the webpage.
+  
+- type: basic
+  front: |
+    What is the div tag ?
+  back: |
+    <div> − The <div> tag stands for "division", it defines a division or section on the webpage. You can place any number of elements to group them in a section.
+  
+- type: basic
+  front: |
+    What is the use of image tag ?
+  back:
+    <img> − The <img> tag is used to insert an image in the webpage.
+
+- type: basic
+  front: |
+    What is the anchor tag?
+  back: |
+    <a> − The <a> tag stands for "anchor", and it is used to place a link in the webpage.
+
+- type: cloze
+  text: |
+    {{c1::<!DOCTYPE html>}}
+    {{c2::<html>}}
+    {{c3::<head>}}
+      {{c4::<meta}} {{c5::charset}}="UTF-8"{{c4::>}}
+      {{c6::<title>}}HTML First Example{{c6::</title>}}
+    {{c3::</head>}}
+    {{c7::<body>}}
+      {{c8::<h1>}}Welcome to TutorialsPoint{{c8::</h1>}}
+      {{c9::<p>}}A learning portal for students and professionals.{{c9::</p>}}
+      {{c10::<h2>}}About TutorialsPoint{{c10::</h2>}}
+      {{c11::<p>}}Tutorials Point originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms.{{c11::</p>}}
+      {{c12::<h2>}}Our Web Tutorials{{c12::</h2>}}
+      {{c13::<ul>}}
+        {{c14::<li>}}<a {{c15::href}}="https://www.tutorialspoint.com/html/index.htm">HTML</a>{{c14::</li>}} 
+        {{c14::<li>}}<a {{c15::href}}="https://www.tutorialspoint.com/css/index.htm">CSS</a>{{c14::</li>}}
+        {{c14::<li>}}<a {{c15::href}}="https://www.tutorialspoint.com/javascript/index.htm">JavaScript</a>{{c14::</li>}}
+      {{c13::</ul>}}
+    {{c7::</body>}}
+    {{c2::</html>}}
+
+- type: basic
+  front: |
+    What are the heading tags?
+  back: |
+    Heading tags are used to define headings of documents. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>. While displaying any heading, the browser adds one line before and one line after that heading.
+
+- type: basic
+  front: |
+    Write html code to demonstrate all html code. 
+  back: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Heading Example</title>
+    </head>
+    <body>
+      <h1>This is heading 1</h1>
+      <h2>This is heading 2</h2>
+      <h3>This is heading 3</h3>
+      <h4>This is heading 4</h4>
+      <h5>This is heading 5</h5>
+      <h6>This is heading 6</h6>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Heading Example</title>
+    </head>
+    <body>
+       {{c1::<h1>}}This is heading 1{{c1::</h1>}}
+       {{c1::<h2>}}This is heading 2{{c1::</h2>}}
+       {{c1::<h3>}}This is heading 3{{c1::</h3>}}
+       {{c1::<h4>}}This is heading 4{{c1::</h4>}}
+       {{c1::<h5>}}This is heading 5{{c1::</h5>}}
+       {{c1::<h6>}}This is heading 6{{c1::</h6>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    Explain the paragraph tag
+  basic: |
+    The <p> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening <p> and a closing </p> tag.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Paragraph Example</title>
+    </head>
+    <body>
+       {{c1::<p>}}Here is a first paragraph of text.{{c1::</p>}}
+       {{c1::<p>}}Here is a second paragraph of text.{{c1::</p>}}
+       {{c1::<p>}}Here is a third paragraph of text.{{c1::</p>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    Explain the line break tag ?
+  back: |
+    Whenever you use the <br /> element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.
+    The <br /> tag has a space between the characters br and the forward slash /. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use <br>, it is not valid in XHTML.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Line Break Example</title>
+    </head>
+    <body>
+       <p>Hello{{c1::<br />}} You delivered your assignment on time.{{c1::<br />}}
+          Thanks{{c1::<br />}} Mahnaz</p>
+    </body>
+    </html>
+
+
+- type: basic
+  front: |
+    Explain the center tag.
+  back: |
+    The <center> tag aligns text, images, or other HTML elements in the middle of a web page.
+    Note: The <center> tag is deprecated in HTML5. You can use the CSS text-align property to center elements.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Centering Content Example</title>
+    </head>
+    <body>
+       <p>This text is not in the center.</p>
+       {{c1::<center>}}
+          <p>This text is in the center.</p>
+       {{c1::</center>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    Explain the horizontal Rule Tag
+  back: |
+    The horizontal rule (<hr>) tag displays a horizonal line. A horizontal line visually breaks up sections of a document. The <hr> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Horizontal Line Example</title>
+    </head>
+    <body>
+       <p>This is paragraph one and should be on top</p>
+       {{c1::<hr />}}
+       <p>This is paragraph two and should be at bottom</p>
+    </body>
+    </html>
+
+
+- type: basic
+  front: |
+    Explain the pre tag
+  back: |
+    The <pre> tag is used to preserve the formatting. Whenever you want to display content on the webpage exactly in the same format as it was written in the HTML document, you can use the <pre> tag. It preserves the formatting of source code, including line breaks and indentation.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Preserve Formatting Example</title>
+    </head>
+    <body>
+       {{c1::<pre>}}
+          function testFunction( strText ){
+             alert (strText)
+          }
+       {{c1::</pre>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    What is Non-breaking Spaces ?
+  back: |
+    Non-breaking spaces prevent an automatic line break and are displayed using the &nbsp; entity.
+    Suppose if you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men" across two lines.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Nonbreaking Spaces Example</title>
+    </head>
+    <body>
+       <p>An example of this technique appears in the movie "12 Angry Men."</p>
+       <p>An example of this technique appears in the movie "12{{c1::&nbsp;&nbsp;&nbsp;}}Angry Men."</p>
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    What are the ordered and unordered list tags ?
+  back: |
+    The <ul> and <ol> tags create the unordered and ordered listings, and to display list items, the <li> tag is used.
+
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Listing Tags Example</title>
+    </head>
+    <body>
+      <h2>Unordered list</h2>
+      {{c1::<ul>}}
+        {{c1::<li>}}Item 1{{c1::</li>}}
+        {{c1::<li>}}Item 2{{c1::</li>}}
+        {{c1::<li>}}Item 3{{c1::</li>}}
+      {{c1::</ul>}}
+      <h2>Ordered list</h2>
+      {{c2::<ul>}}
+        {{c2::<li>}}Item 1{{c2::</li>}}
+        {{c2::<li>}}Item 2{{c2::</li>}}
+        {{c2::<li>}}Item 3{{c2::</li>}}
+      {{c2::</ul>}}  
+    </body>
+    </html>
