@@ -3,13 +3,13 @@
     <!DOCTYPE html>
     <html lang="{{c1::en}}">
     <head>
-      <meta charset="{{c2::UTF-8}}">
-      <title>{{c3::My First Web Page}}</title>
+      <meta charset="{{c1::UTF-8}}">
+      <title>{{c2::My First Web Page}}</title>
     </head>
     <body>
-      <!-- {{c4::This is a comment}} -->
-      <h1>{{c5::Welcome to HTML}}</h1>
-      <p>{{c6::This is a paragraph.}}</p>
+      <!-- {{c3::This is a comment}} -->
+      <h1>{{c4::Welcome to HTML}}</h1>
+      <p>{{c5::This is a paragraph.}}</p>
     </body>
     </html>
 
@@ -28,3 +28,1745 @@
     Describe the structure of a basic HTML document.
   back: |
     An HTML document starts with <!DOCTYPE html>, followed by <html>, <head>, and <body> sections.
+
+- type: type-in-the-answer
+  front: |
+    Please write an example function to print hello world
+  back: |
+    "def hello_world():
+      print('Hello World')"
+
+- type: cloze
+  text: |
+    {{c1::<!DOCTYPE html>}}
+    {{c2::<html>}}
+    {{c3::<head>}}
+      {{c4::<title>}}Page title{{c4::</title>}}
+    {{c3::</head>}}
+    {{c5::<body>}}
+      {{c6::<h1>}}Webpage's Heading{{c6::</h1>}}
+      {{c7::<p>}}Content (Your first paragraph).{{c7::</p>}}
+    {{c5::</body>}}
+    {{c2::</html>}} 
+
+- type: basic
+  front: |
+    What is the basic structure of an html page. Create a basic HTML page. 
+  back: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Page title</title>
+    </head>
+    <body>
+      <h1>Webpage's Heading</h1>
+      <p>Content (Your first paragraph).</p>
+    </body>
+    </html>
+  
+- type: basic
+  front: |
+    What is the purpose of <!DOCTYPE html>
+  back: |
+    This element defines the document type as HTML. This element must be written before writing any HTML document.
+  
+- type: basic
+  front: |
+    What is the purpose of <html> ... </html>
+  back: |
+    The <html> tag is the parent tag for all HTML elements. Everything related to create an HTML document must be written inside the <html> tag. CSS, JavaScript, and jQuery must also be written inside this tag.
+  
+- type: basic
+  front: |
+    What is the purpose of <head> ... </head>
+  back: |
+    The <head> tag is a container tag for all those elements that are not directly displayed on the webpage but required for the page functionalities. It contains meta tags (which are used for SEO purposes), title tag, script tags, etc.
+
+- type: basic
+  front: |
+    What is the purpose of <title>...</title>
+  back: |
+    The <title> tag is used to define the title of the webpage that you can see in the browser's tab, bookmarks list, and search engine results. This tag is also very important for SEO purposes to help search engine to understand the content of the webpage.
+
+- type: basic
+  front: |
+    What is the purpose of the <body>...<body> tag.
+  back: |
+    The <body> tag is the container tag for all those elements, which represents the main content of a webpage that displays on the browser.
+
+- type: basic
+  front: |
+    What is the purpose of the <h1>...</h1> tag.
+  back: |
+    The <h1> tag is one of the heading tags. It is the most important heading tag, which defines the main title or headline of the webpage. Any text written inside <h1> and </h1> is a top-level heading of the content.
+
+- type: basic
+  front: |
+    What is the purpose of <p>...</p> tag.
+  back: |
+    The <p> tag defines a paragraph, anything written inside <p> and </p> displays as a paragraph on the webpage. Use multiple <p> tags to display text in different paragraphs.
+
+- type: basic
+  front: |
+    How do we write a comment in html.
+  back: |
+    <!--comment content-->
+
+- type: type-in-the-answer
+  front: |
+    What is the full form of HTML ?
+  back: |
+    "Hyper Text Markup Language"
+ 
+- type: basic
+  front: |
+    What is break tag in HTML ?
+  back: |
+    <br> or <br /> − The <br> tag stands for "break", and it inserts a line break on the webpage.
+  
+- type: basic
+  front: |
+    What is the div tag ?
+  back: |
+    <div> − The <div> tag stands for "division", it defines a division or section on the webpage. You can place any number of elements to group them in a section.
+  
+- type: basic
+  front: |
+    What is the use of image tag ?
+  back:
+    <img> − The <img> tag is used to insert an image in the webpage.
+
+- type: basic
+  front: |
+    What is the anchor tag?
+  back: |
+    <a> − The <a> tag stands for "anchor", and it is used to place a link in the webpage.
+
+- type: cloze
+  text: |
+    {{c1::<!DOCTYPE html>}}
+    {{c2::<html>}}
+    {{c3::<head>}}
+      {{c4::<meta}} {{c5::charset}}="UTF-8"{{c4::>}}
+      {{c6::<title>}}HTML First Example{{c6::</title>}}
+    {{c3::</head>}}
+    {{c7::<body>}}
+      {{c8::<h1>}}Welcome to TutorialsPoint{{c8::</h1>}}
+      {{c9::<p>}}A learning portal for students and professionals.{{c9::</p>}}
+      {{c10::<h2>}}About TutorialsPoint{{c10::</h2>}}
+      {{c11::<p>}}Tutorials Point originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms.{{c11::</p>}}
+      {{c12::<h2>}}Our Web Tutorials{{c12::</h2>}}
+      {{c13::<ul>}}
+        {{c14::<li>}}<a {{c15::href}}="https://www.tutorialspoint.com/html/index.htm">HTML</a>{{c14::</li>}} 
+        {{c14::<li>}}<a {{c15::href}}="https://www.tutorialspoint.com/css/index.htm">CSS</a>{{c14::</li>}}
+        {{c14::<li>}}<a {{c15::href}}="https://www.tutorialspoint.com/javascript/index.htm">JavaScript</a>{{c14::</li>}}
+      {{c13::</ul>}}
+    {{c7::</body>}}
+    {{c2::</html>}}
+
+- type: basic
+  front: |
+    What are the heading tags?
+  back: |
+    Heading tags are used to define headings of documents. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>. While displaying any heading, the browser adds one line before and one line after that heading.
+
+- type: basic
+  front: |
+    Write html code to demonstrate all html code. 
+  back: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Heading Example</title>
+    </head>
+    <body>
+      <h1>This is heading 1</h1>
+      <h2>This is heading 2</h2>
+      <h3>This is heading 3</h3>
+      <h4>This is heading 4</h4>
+      <h5>This is heading 5</h5>
+      <h6>This is heading 6</h6>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Heading Example</title>
+    </head>
+    <body>
+       {{c1::<h1>}}This is heading 1{{c1::</h1>}}
+       {{c1::<h2>}}This is heading 2{{c1::</h2>}}
+       {{c1::<h3>}}This is heading 3{{c1::</h3>}}
+       {{c1::<h4>}}This is heading 4{{c1::</h4>}}
+       {{c1::<h5>}}This is heading 5{{c1::</h5>}}
+       {{c1::<h6>}}This is heading 6{{c1::</h6>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    Explain the paragraph tag
+  basic: |
+    The <p> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening <p> and a closing </p> tag.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Paragraph Example</title>
+    </head>
+    <body>
+       {{c1::<p>}}Here is a first paragraph of text.{{c1::</p>}}
+       {{c1::<p>}}Here is a second paragraph of text.{{c1::</p>}}
+       {{c1::<p>}}Here is a third paragraph of text.{{c1::</p>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    Explain the line break tag ?
+  back: |
+    Whenever you use the <br /> element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.
+    The <br /> tag has a space between the characters br and the forward slash /. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use <br>, it is not valid in XHTML.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Line Break Example</title>
+    </head>
+    <body>
+       <p>Hello{{c1::<br />}} You delivered your assignment on time.{{c1::<br />}}
+          Thanks{{c1::<br />}} Mahnaz</p>
+    </body>
+    </html>
+
+
+- type: basic
+  front: |
+    Explain the center tag.
+  back: |
+    The <center> tag aligns text, images, or other HTML elements in the middle of a web page.
+    Note: The <center> tag is deprecated in HTML5. You can use the CSS text-align property to center elements.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Centering Content Example</title>
+    </head>
+    <body>
+       <p>This text is not in the center.</p>
+       {{c1::<center>}}
+          <p>This text is in the center.</p>
+       {{c1::</center>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    Explain the horizontal Rule Tag
+  back: |
+    The horizontal rule (<hr>) tag displays a horizonal line. A horizontal line visually breaks up sections of a document. The <hr> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Horizontal Line Example</title>
+    </head>
+    <body>
+       <p>This is paragraph one and should be on top</p>
+       {{c1::<hr />}}
+       <p>This is paragraph two and should be at bottom</p>
+    </body>
+    </html>
+
+
+- type: basic
+  front: |
+    Explain the pre tag
+  back: |
+    The <pre> tag is used to preserve the formatting. Whenever you want to display content on the webpage exactly in the same format as it was written in the HTML document, you can use the <pre> tag. It preserves the formatting of source code, including line breaks and indentation.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Preserve Formatting Example</title>
+    </head>
+    <body>
+       {{c1::<pre>}}
+          function testFunction( strText ){
+             alert (strText)
+          }
+       {{c1::</pre>}}
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    What is Non-breaking Spaces ?
+  back: |
+    Non-breaking spaces prevent an automatic line break and are displayed using the &nbsp; entity.
+    Suppose if you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men" across two lines.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Nonbreaking Spaces Example</title>
+    </head>
+    <body>
+       <p>An example of this technique appears in the movie "12 Angry Men."</p>
+       <p>An example of this technique appears in the movie "12{{c1::&nbsp;&nbsp;&nbsp;}}Angry Men."</p>
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    What are the ordered and unordered list tags ?
+  back: |
+    The <ul> and <ol> tags create the unordered and ordered listings, and to display list items, the <li> tag is used.
+
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Listing Tags Example</title>
+    </head>
+    <body>
+      <h2>Unordered list</h2>
+      {{c1::<ul>}}
+        {{c1::<li>}}Item 1{{c1::</li>}}
+        {{c1::<li>}}Item 2{{c1::</li>}}
+        {{c1::<li>}}Item 3{{c1::</li>}}
+      {{c1::</ul>}}
+      <h2>Ordered list</h2>
+      {{c2::<ul>}}
+        {{c2::<li>}}Item 1{{c2::</li>}}
+        {{c2::<li>}}Item 2{{c2::</li>}}
+        {{c2::<li>}}Item 3{{c2::</li>}}
+      {{c2::</ul>}}  
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    What are HTML elements and how are they created?
+  back: |
+    HTML elements are the basic building blocks to create a web page. They are created with the help of an opening tag, content, and a closing tag.
+
+
+- type: basic
+  front: |
+    What do HTML elements specify in a document?
+  back: |
+    HTML elements specify how HTML documents should be built and what kind of content should be placed within various parts of an HTML document.
+
+
+- type: basic
+  front: |
+    What is an HTML element?
+  back: |
+    An HTML element is a fundamental component of an HTML document that can contain data to display on a webpage, such as text, image, link, or sometimes nothing.
+
+- type: basic
+  front: |
+    What does an HTML element include?
+  back: |
+    An HTML element includes an opening tag, content, and a closing tag. The opening tag may also include attributes.
+
+- type: basic
+  front: |
+    How is an HTML document structured?
+  back: |
+    An HTML document consists of a tree of HTML elements, which define the content and layout of a webpage, such as how and what content should be displayed in different sections.
+
+- type: basic
+  front: |
+    What is the relationship between HTML elements and HTML tags?
+  back: |
+    HTML elements are created using HTML tags. An HTML element consists of a pair of starting and closing tags with content between them, which defines the content and structure of the webpage.
+
+
+- type: basic
+  front: |
+    What is an HTML tag?
+  back: |
+    HTML tags are like keywords that are part of HTML elements. They are enclosed in angle brackets (<>).
+
+
+- type: basic
+  front: |
+    What is the difference between HTML elements and HTML tags?
+  back: |
+    HTML elements define the content and structure of the webpage with both starting and closing tags, whereas HTML tags are the individual components (keywords) that form the HTML elements.
+
+- type: basic
+  front: |
+    Give an example of an HTML element and its tags.
+  back: |
+    <p> is the starting tag of a paragraph, and </p> is the closing tag. Together, <p>This is paragraph</p> is a paragraph element.
+
+- type: basic
+  front: |
+    What is a nested HTML element?
+  back: |
+    A nested HTML element is created by placing one or more HTML elements inside another HTML element.
+
+- type: basic
+  front: |
+    What is a parent and child element in HTML?
+  back: |
+    The container element is considered the parent element, and the elements placed inside it are the child elements.
+
+- type: basic
+  front: |
+    Can HTML elements be nested at multiple levels?
+  back: |
+    Yes, HTML allows multiple levels of nesting of elements, where child elements are nested inside parent elements.
+
+- type: basic
+  front: |
+    What must you consider when nesting HTML elements?
+  back: |
+    While HTML allows multiple levels of nesting, it requires following certain guidelines to ensure proper structure and functionality.
+
+- type: basic
+  front: |
+    What are HTML void elements?
+  back: |
+    HTML void elements are elements that don't require closing tags. They are also known as empty or self-closing elements.
+
+- type: basic
+  front: |
+    Why are void elements called "empty" or "self-closing" elements?
+  back: |
+    Void elements are called "empty" or "self-closing" because they don't have content or require a closing tag.
+
+- type: basic
+  front: |
+    Can HTML void elements contain content or be nested?
+  back: |
+    No, HTML void elements don't have a content model and do not allow nesting of other elements.
+
+- type: basic
+  front: |
+    Name some common HTML void elements.
+  back: |
+    Some common HTML void elements are <img />, <hr />, and <br />.
+
+- type: basic
+  front: |
+    How are attributes placed in an HTML element?
+  back: |
+    Attributes are placed with an opening tag by using pairs of attribute names and values.
+
+- type: basic
+  front: |
+    How do you separate multiple attributes in an HTML element?
+  back: |
+    Multiple attributes can be separated with a space.
+
+- type: basic
+  front: |
+    Give an example of an HTML element with two attributes.
+  back: |
+    <img src="logo.jpg" alt="TutorialsPoint Logo" />
+
+- type: basic
+  front: |
+    Are HTML elements case-sensitive?
+  back: |
+    No, HTML elements are not case-sensitive, meaning they can be written in uppercase or lowercase.
+
+- type: basic
+  front: |
+    What does W3C recommend regarding the case of HTML tag names?
+  back: |
+    W3C recommends using lowercase for HTML tag names.
+
+- type: basic
+  front: |
+    Why should you use lowercase for HTML tag names?
+  back: |
+    While HTML elements are not case-sensitive, using lowercase is a good practice because W3C demands lowercase for consistency and readability.
+
+- type: basic
+  front: |
+    What are HTML attributes?
+  back: |
+    HTML attributes are special words that provide additional information to an HTML element. They are used to configure or adjust the element's behavior.
+
+- type: basic
+  front: |
+    Where are HTML attributes placed in an element?
+  back: |
+    HTML attributes are placed inside the element's opening tag.
+
+- type: basic
+  front: |
+    What are the two parts of an HTML attribute?
+  back: |
+    An HTML attribute consists of two parts: a name (attribute identifier) and a value.
+
+- type: basic
+  front: |
+    What is the purpose of the attribute name?
+  back: |
+    The attribute name is the keyword or identifier that defines a specific characteristic of the element in which it is used.
+
+- type: basic
+  front: |
+    What is the purpose of the attribute value?
+  back: |
+    The attribute value provides the data or information that defines the setting for the attribute. It is assigned within double quotes.
+
+- type: basic
+  front: |
+    Give an example of an HTML tag with an attribute.
+  back: |
+    An example of an HTML tag with an attribute is <p align="left">, where "align" is the attribute name and "left" is the value.
+
+- type: basic
+  front: |
+    Are HTML attributes mandatory to use with elements?
+  back: |
+    No, HTML attributes are optional and can be used to provide additional information about an HTML element.
+
+- type: basic
+  front: |
+    What is a Boolean attribute in HTML?
+  back: |
+    A Boolean attribute is an attribute that does not require a value. It is either present or absent, indicating a true or false state.
+
+- type: basic
+  front: |
+    How should multiple HTML attributes be separated?
+  back: |
+    Multiple HTML attributes should be separated by spaces.
+
+- type: basic
+  front: |
+    Where should HTML attributes be written in an element?
+  back: |
+    HTML attributes should always be written inside the opening tag.
+
+- type: basic
+  front: |
+    Can all HTML elements have attributes?
+  back: |
+    No, not all HTML elements can have attributes. Elements like <head> and <title> do not have attributes.
+
+- type: basic
+  front: |
+    What are W3C's recommendations for writing HTML attributes?
+  back: |
+    W3C recommends writing attributes in lowercase and keeping the attribute values inside quotes.
+
+- type: basic
+  front: |
+    Write html code to demonstrate attributes.
+  back: |
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Example of HTML Attributes</title>
+    </head>
+
+    <body>
+        <p align="left">Left Aligned</p>
+        <p align="center">Center Aligned</p>
+        <p align="right">Right Aligned</p>
+    </body>
+
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Example of HTML Attributes</title>
+    </head>
+
+    <body>
+        <p {{c1::align="left"}}>Left Aligned</p>
+        <p {{c1::align="center"}}>Center Aligned</p>
+        <p {{c1::align="right"}}>Right Aligned</p>
+    </body>
+
+    </html>
+
+- type: basic
+  front: |
+    What are the core attributes in html? What is meant by core attributes anyway?
+  back: |
+    Core attributes are some common attributes almost(emphesis on almost) every tag has. The core attributes are id, title, class and style.
+
+- type: basic
+  front: |
+    What is the purpose of the `id` attribute in HTML?
+  back: |
+    The `id` attribute is used to uniquely identify any element within an HTML page.
+
+- type: basic
+  front: |
+    What are the two primary reasons to use the `id` attribute in an HTML element?
+  back: |
+    1. It allows you to identify just that element and its content.
+    2. It helps distinguish between elements that have the same name within a webpage or style sheet.
+
+- type: basic
+  front: |
+    How can the `id` attribute be used when there are two elements with the same name?
+  back: |
+    The `id` attribute can distinguish between elements that have the same name by giving each element a unique identifier.
+
+- type: basic
+  front: |
+    Give an example of using the `id` attribute to distinguish between two paragraphs.
+  back: |
+    Example:
+    <p id="html">This para explains what is HTML</p>
+    <p id="css">This para explains what is Cascading Style Sheet</p>
+
+- type: cloze
+  text: |
+    The `id` attribute can be used to {{c1::uniquely identify}} any element within an HTML page.
+
+- type: cloze
+  text: |
+    The two primary reasons for using the `id` attribute are:
+    1. To identify just that element and its content.
+    2. To {{c1::distinguish between elements}} that have the same name within a webpage or style sheet.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>ID Attribute Example</title>
+    </head>
+    <body>
+       <p {{c1::id="html"}}>This para explains what is HTML</p>
+       <p {{c1::id="css"}}>This para explains what is Cascading Style Sheet</p>
+    </body>
+    </html>
+
+
+- type: basic
+  front: |
+    What is the purpose of the `title` attribute in HTML?
+  back: |
+    The `title` attribute gives a suggested title for the element and is often displayed as a tooltip when the cursor hovers over the element.
+
+- type: basic
+  front: |
+    How does the behavior of the `title` attribute vary?
+  back: |
+    The behavior of the `title` attribute depends on the element that carries it, though it is usually shown as a tooltip when the cursor hovers over the element or while the element is loading.
+
+- type: basic
+  front: |
+    What happens when you hover the cursor over an element with a `title` attribute?
+  back: |
+    When you hover over an element with a `title` attribute, the content of the `title` appears as a tooltip.
+
+- type: basic
+  front: |
+    Give an example of using the `title` attribute in HTML.
+  back: |
+    Example:
+    <h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+    Hovering over the heading will display "Hello HTML!" as a tooltip.
+
+- type: cloze
+  text: |
+    The `title` attribute gives a suggested {{c1::title}} for the element and is often displayed as a {{c2::tooltip}} when the cursor hovers over the element.
+
+- type: cloze
+  text: |
+    The behavior of the `title` attribute depends on the {{c1::element}} that carries it, but it is often displayed as a {{c2::tooltip}} when the cursor hovers over the element.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>The title Attribute Example</title>
+    </head>
+    <body>
+       <h3 {{c1::title="Hello HTML!"}}>Titled Heading Tag Example</h3>
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    What does the `class` attribute do in HTML?
+  back: |
+    The `class` attribute specifies one or more CSS classes for an HTML element, allowing it to be styled using CSS.
+
+- type: basic
+  front: |
+    How can you specify multiple CSS classes for a single element using the `class` attribute?
+  back: |
+    You can specify multiple classes for an element by providing a space-separated list of class names in the `class` attribute.
+
+- type: basic
+  front: |
+    Give an example of using multiple classes in the `class` attribute.
+  back: |
+    Example:
+    class="className1 className2 className3"
+    This assigns three CSS classes to the element: `className1`, `className2`, and `className3`.
+
+- type: cloze
+  text: |
+    The `class` attribute specifies one or more {{c1::CSS classes}} for an HTML element.
+
+- type: cloze
+  text: |
+    You can specify multiple classes for an element by using a {{c1::space-separated list}} of class names in the `class` attribute.
+
+- type: cloze
+  text: |
+    class="{{c1::className1 className2 className3}}"
+
+- type: basic
+  front: |
+    What does the `style` attribute do in HTML?
+  back: |
+    The `style` attribute is used to apply inline CSS styles directly to an HTML element.
+
+- type: basic
+  front: |
+    Give an example of using the `style` attribute to change the font and color of a paragraph.
+  back: |
+    Example:
+    <p style="font-family:arial; color:#FF0000;">Welcome to Tutorialspoint...</p>
+    This changes the font to Arial and the text color to red.
+
+- type: cloze
+  text: |
+    The `style` attribute is used to apply {{c1::inline CSS styles}} directly to an HTML element.
+
+- type: cloze
+  text: |
+    <p {{c1::style="font-family:arial; color:#FF0000;"}}>Welcome to Tutorialspoint...</p>
+
+- type: basic
+  front: |
+    What are Initernionlization attributes and name some of the common ones in HTML. 
+  back: |
+    Internationalization attributes are HTML attributes that help adapt documents to different languages and regions. Some common internationalization attributes are dir and lang.
+
+### Basic Cards
+
+- type: basic
+  front: |
+    What are HTML Internationalization Attributes?
+  back: |
+    HTML Internationalization Attributes are attributes that allow for defining the direction of text and the language of a document. There are three main attributes for this purpose: `dir`, `lang`, and `xml:lang`.
+
+- type: basic
+  front: |
+    What does the `dir` attribute do in HTML?
+  back: |
+    The `dir` attribute specifies the direction in which text should flow. It can take the values `ltr` (left to right) or `rtl` (right to left) for languages like Hebrew or Arabic.
+
+- type: basic
+  front: |
+    What happens when the `dir` attribute is used within the `<html>` tag?
+  back: |
+    When used within the `<html>` tag, the `dir` attribute controls the text direction for the entire document.
+
+- type: basic
+  front: |
+    What does the `lang` attribute do in HTML, and why is it still used?
+  back: |
+    The `lang` attribute specifies the main language used in a document. It remains in use for backward compatibility with older versions of HTML, though it has been replaced by the `xml:lang` attribute in XHTML.
+
+- type: basic
+  front: |
+    What are the values of the `lang` attribute based on?
+  back: |
+    The values of the `lang` attribute are based on the ISO-639 standard two-character language codes.
+
+- type: basic
+  front: |
+    Give an example of the `dir` attribute in an HTML document.
+  back: |
+    Example:
+    
+    <html dir="rtl">
+      <head>
+         <title>Display Directions</title>
+      </head>
+      <body>
+         This is how IE 5 renders right-to-left directed text.
+      </body>
+    </html>
+    
+    This will render the text in right-to-left direction.
+
+- type: basic
+  front: |
+    Give an example of the `lang` attribute in an HTML document.
+  back: |
+    Example:
+    
+    <html lang="en">
+      <head>
+         <title>English Language Page</title>
+      </head>
+      <body>
+         This page is using English Language
+      </body>
+    </html>
+    
+    This specifies that the document is written in English.
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    The `dir` attribute specifies the {{c1::direction}} in which text should flow and can take the values {{c2::ltr}} (left to right) or {{c3::rtl}} (right to left).
+
+- type: cloze
+  text: |
+    When the `dir` attribute is used within the `<html>` tag, it determines the text direction for {{c1::the entire document}}.
+
+- type: cloze
+  text: |
+    The `lang` attribute specifies the {{c1::main language}} used in a document and is used for {{c2::backward compatibility}} with earlier HTML versions.
+
+- type: cloze
+  text: |
+    The values of the `lang` attribute are based on the {{c1::ISO-639}} standard two-character language codes.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html {{c1::dir="rtl"}}>
+    <head>
+       <title>Display Directions</title>
+    </head>
+    <body>
+       This is how IE 5 renders right-to-left directed text.
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html {{c1::lang="en"}}>
+    <head>
+       <title>English Language Page</title>
+    </head>
+    <body>
+       This page is using English Language
+    </body>
+    </html>
+
+### Basic Cards
+
+- type: basic
+  front: |
+    What are Boolean attributes in HTML?
+  back: |
+    Boolean attributes represent true and false values and do not require a value. To set the true value, you write the attribute's name, and to set it to false, you omit the attribute altogether.
+
+- type: basic
+  front: |
+    How do you set a Boolean attribute to true or false in HTML?
+  back: |
+    To set a Boolean attribute to true, write the attribute name. To set it to false, omit the attribute.
+
+- type: basic
+  front: |
+    List some common HTML Boolean attributes.
+  back: |
+    Some common Boolean attributes are:
+    - disabled
+    - readonly
+    - required
+    - inert
+    - autocomplete
+
+- type: basic
+  front: |
+    Give an example of using a Boolean attribute in an HTML form.
+  back: |
+    Example:
+    
+    <input type="text" id="user_name" name="user_name" required>
+    
+    The `required` Boolean attribute indicates that this input field must be filled in before submitting the form.
+
+- type: basic
+  front: |
+    What is the `xml:lang` attribute in XHTML?
+  back: |
+    The `xml:lang` attribute is the XHTML replacement for the `lang` attribute. It specifies the language of the content and uses ISO-639 language codes.
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    Boolean attributes represent {{c1::true and false values}} and do not require a value with the attribute name.
+
+- type: cloze
+  text: |
+    To set a Boolean attribute to {{c1::true}}, write the attribute name, and to set it to {{c2::false}}, omit the attribute.
+
+- type: cloze
+  text: |
+    Some common Boolean attributes are:
+    - {{c1::disabled}}
+    - {{c2::readonly}}
+    - {{c3::required}}
+    - {{c4::inert}}
+    - {{c5::autocomplete}}
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <h1>Example of "required" attribute</h1>
+    <form>
+      <label for="user_name">Input User Name:</label>
+      <input type="text" id="user_name" name="user_name" {{c1::required}}>
+      <input type="submit">
+    </form>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    The `xml:lang` attribute is the {{c1::XHTML replacement}} for the `lang` attribute and uses {{c2::ISO-639}} country codes to specify the language of the content.
+
+### Basic Cards
+
+- type: basic
+  front: |
+    What does the `align` attribute do in HTML?
+  back: |
+    The `align` attribute horizontally aligns tags and can take values like `right`, `left`, or `center`.
+
+- type: basic
+  front: |
+    What does the `valign` attribute do in HTML?
+  back: |
+    The `valign` attribute vertically aligns tags within an HTML element and can take values like `top`, `middle`, or `bottom`.
+
+- type: basic
+  front: |
+    What is the function of the `bgcolor` attribute in HTML?
+  back: |
+    The `bgcolor` attribute places a background color behind an element. It can use numeric, hexadecimal, or RGB values.
+
+- type: basic
+  front: |
+    What is the function of the `background` attribute in HTML?
+  back: |
+    The `background` attribute allows you to place a background image behind an element by specifying a URL.
+
+- type: basic
+  front: |
+    What does the `id` attribute do in HTML?
+  back: |
+    The `id` attribute names an element for use with Cascading Style Sheets (CSS) or JavaScript.
+
+- type: basic
+  front: |
+    What does the `class` attribute do in HTML?
+  back: |
+    The `class` attribute classifies an element for use with Cascading Style Sheets (CSS) or JavaScript.
+
+- type: basic
+  front: |
+    What does the `width` attribute do in HTML?
+  back: |
+    The `width` attribute specifies the width of tables, images, or table cells using numeric values.
+
+- type: basic
+  front: |
+    What does the `height` attribute do in HTML?
+  back: |
+    The `height` attribute specifies the height of tables, images, or table cells using numeric values.
+
+- type: basic
+  front: |
+    What does the `title` attribute do in HTML?
+  back: |
+    The `title` attribute specifies a "pop-up" title for elements, usually displayed as a tooltip when hovered over.
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    The `align` attribute horizontally aligns tags and can take values like {{c1::right}}, {{c2::left}}, or {{c3::center}}.
+
+- type: cloze
+  text: |
+    The `valign` attribute vertically aligns tags within an HTML element and can take values like {{c1::top}}, {{c2::middle}}, or {{c3::bottom}}.
+
+- type: cloze
+  text: |
+    The `bgcolor` attribute places a {{c1::background color}} behind an element and can use numeric, {{c2::hexadecimal}}, or {{c3::RGB}} values.
+
+- type: cloze
+  text: |
+    The `background` attribute places a background {{c1::image}} behind an element by specifying a {{c2::URL}}.
+
+- type: cloze
+  text: |
+    The `id` attribute {{c1::names an element}} for use with Cascading Style Sheets (CSS) or JavaScript.
+
+- type: cloze
+  text: |
+    The `class` attribute {{c1::classifies an element}} for use with Cascading Style Sheets (CSS) or JavaScript.
+
+- type: cloze
+  text: |
+    The `width` attribute specifies the {{c1::width}} of tables, images, or table cells using numeric values.
+
+- type: cloze
+  text: |
+    The `height` attribute specifies the {{c1::height}} of tables, images, or table cells using numeric values.
+
+- type: cloze
+  text: |
+    The `title` attribute specifies a {{c1::"pop-up" title}} for elements, usually displayed as a tooltip when hovered over.
+
+### Basic Cards
+
+- type: basic
+  front: |
+    What is the best practice for writing attribute values in HTML?
+  back: |
+    The best practice is to always write attribute values in single or double quotes.
+
+- type: basic
+  front: |
+    Give an example of good and bad practice for writing attribute values in HTML.
+  back: |
+    Good Practice:
+    
+    <a href="https://www.tutorialspoint.com/html/html_overview.htm">
+      HTML Introduction
+    <a>
+    
+
+    Bad Practice:
+    
+    <a href=https://www.tutorialspoint.com/html/html_overview.htm>
+      HTML Introduction
+    <a>
+    
+
+- type: basic
+  front: |
+    Why should HTML attributes be written in lowercase, even though HTML is case-insensitive?
+  back: |
+    It is a good practice to write HTML attributes in lowercase for consistency and readability, even though HTML is case-insensitive.
+
+- type: basic
+  front: |
+    How can you use single and double quotes together in HTML attributes?
+  back: |
+    You can mix single and double quotes in attribute values, for example:
+    
+    <p title="We are known for 'Simple Easy Learning'">Tutorialspoint</p>
+    <p title='We are known for "Simple Easy Learning"'>Tutorialspoint</p>
+    
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    The best practice is to always write the attribute {{c1::values}} in single or double quotes.
+
+- type: cloze
+  text: |
+    It is good practice to write HTML attributes in {{c1::lowercase}} even though HTML is case-insensitive.
+
+- type: cloze
+  text: |
+    When using single and double quotes together in an HTML attribute, you can use combinations like:
+    <p title="{{c1::We are known for 'Simple Easy Learning'}}">Tutorialspoint</p>
+    or
+    <p title='{{c2::We are known for "Simple Easy Learning"}}'>Tutorialspoint</p>
+
+
+### Basic Cards
+
+- type: basic
+  front: |
+    Why are headings important for structuring content in HTML?
+  back: |
+    Headings are important for structuring content because they provide a clear visual indication of the beginning of new sections or topics, enhancing readability and user experience.
+
+- type: basic
+  front: |
+    How do properly structured headings enhance readability and user experience on websites?
+  back: |
+    Properly structured headings organize information, making it easy to navigate, which improves readability and user experience.
+
+- type: basic
+  front: |
+    How do headings impact SEO?
+  back: |
+    Well-organized headings help search engines understand the content structure, which improves content indexing and SEO.
+
+- type: basic
+  front: |
+    How do headings help in highlighting important topics?
+  back: |
+    Using header tags properly keeps the content readable by clearly distinguishing important topics and sections.
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    Headings are crucial for structuring content and providing a clear visual indication of the beginning of {{c1::new sections or topics}}.
+
+- type: cloze
+  text: |
+    Properly structured headings enhance {{c1::readability}} and user experience on websites by organizing information and making it easy to {{c2::navigate}}.
+
+- type: cloze
+  text: |
+    Well-organized headings help search engines to understand the {{c1::content structure}} and improve content {{c2::indexing}}.
+
+- type: cloze
+  text: |
+    Using header tags properly keeps the content {{c1::readable}} and highlights important topics.
+
+
+- type: cloze
+  text: |
+    This is how to make heading using css instead of using header tags.
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p{
+            {{c1::font-size}}: {{c1::24px}};
+            {{c1::font-weight}}: {{c1::bold}};
+        }
+        </style>
+    </head>
+    <body>
+        <p>Tutorialspoint</p>
+        <p>Simply Easy Learning</p>
+    </body>
+    </html>
+
+### Basic Cards
+
+- type: basic
+  front: |
+    How are HTML headings created?
+  back: |
+    HTML headings are created using <h1> to <h6> tags.
+
+- type: basic
+  front: |
+    What is the purpose of the heading hierarchy in HTML?
+  back: |
+    The heading hierarchy determines the importance of content and helps create a clear flow of information for users and search engines.
+
+- type: basic
+  front: |
+    What is the significance of the <h1> tag in HTML?
+  back: |
+    The <h1> tag is the top-level heading, used to denote the main topic or title of the entire page.
+
+- type: basic
+  front: |
+    What is the function of the <h2> tag in HTML?
+  back: |
+    The <h2> tag is used for subheadings under <h1>, representing major sections related to the main topic and providing more specific context to the content.
+
+- type: basic
+  front: |
+    How are <h3> to <h6> tags used in HTML?
+  back: |
+    The <h3> to <h6> tags are used for further subsections or nested content within <h2> headings, offering a deeper level of hierarchy for organizing content.
+
+- type: basic
+  front: |
+    What are the common mistakes to avoid when using HTML headings?
+  back: |
+    Common mistakes include:
+    - Skipping levels in the hierarchy (e.g., going from <h1> to <h3>).
+    - Overusing <h1>; it should only be used for the main title.
+    - Applying excessive styling to headings; styling should be handled by CSS.
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    HTML headings are created using {{c1::<h1>}} to {{c2::<h6>}} tags.
+
+- type: cloze
+  text: |
+    The heading hierarchy determines the {{c1::importance of content}} and helps create a clear {{c2::information flow}} for users and search engines.
+
+- type: cloze
+  text: |
+    The <h1> tag is the {{c1::top-level heading}} that denotes the {{c2::main topic}} or title of the entire page.
+
+- type: cloze
+  text: |
+    The <h2> tag is used for {{c1::subheadings}} under <h1>, representing major sections related to the main topic and providing more specific {{c2::context}} to the content.
+
+- type: cloze
+  text: |
+    The <h3> to <h6> tags are used for further {{c1::subsections}} or nested content within <h2> headings, offering a {{c2::deeper level of hierarchy}} for organizing content.
+
+- type: cloze
+  text: |
+    Common mistakes to avoid when using HTML headings include:
+    - Skipping {{c1::levels}} in the hierarchy (e.g., going from <h1> to <h3>).
+    - Overusing {{c2::<h1>}}; it should only be used for the main title.
+    - Applying excessive {{c3::styling}} to headings; {{c4::CSS}} should handle the aesthetics.
+
+- type: cloze
+  text: |
+    Line breaks
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p>This is a paragraph with a {{c1::<br>}} line break. </p>
+    </body>
+    </html>
+
+
+- type: cloze
+  text: |
+    Emphasize text
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p> This is a {{c1::<em>}} paragraph {{c1::</em>}} with {{c2::<strong>}} emphasized {{c2::</strong>}} text. </p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Using a tag within p tag
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p>Visit our website {{c1::<a href="https://www.tutorialspoint.com">}}here {{c1::</a>}}. </p>
+    </body>
+    </html>
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    Inline Styles within Paragraphs
+    The `<span>` tag can be used to style a particular text or word within a paragraph. In this example, the text is styled to be blue.
+    
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p>This is a {{c1::<span style="color: blue;">}}blue{{c1::</span>}} text within a paragraph. </p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Images within Paragraphs
+    The `<img>` tag is used to embed images within paragraphs. In this example, an image is inserted into the paragraph.
+    
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p> Here's an image: {{c1::<img src="\html\images\test.png" alt="Example Image">}} </p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Superscript and Subscript within Paragraphs
+    The `<sup>` and `<sub>` tags are used to create superscript and subscript text within a paragraph.
+    
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p> H{{c1::<sub>}}2{{c1::</sub>}}O is the chemical formula for water. 2{{c2::<sup>}}3{{c2::</sup>}} equals 8.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Abbreviations within Paragraphs
+    The `<abbr>` tag helps define abbreviations or acronyms within a paragraph. In this example, the abbreviation HTML is explained.
+    
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p> {{c1::<abbr title="Hypertext Markup Language">}}HTML{{c1::</abbr>}} is used for web development.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Citations within Paragraphs
+    The `<cite>` tag specifies citations or references within a paragraph. In this example, the title of a book is cited.
+    
+    <html>
+    <head>
+       <title>Enhancing Paragraphs </title>
+    </head>
+    <body>
+       <p> The book {{c1::<cite>}}War and Peace{{c1::</cite>}} is a classic novel. </p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Styling Paragraph with CSS
+    CSS can be used to change the appearance of text within `<p>` tags. In this example, the text is styled with a larger font and a color change.
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <style>
+          p {
+             {{c1::font-size}}: 18px;
+             {{c2::color}}: #333;
+          }
+       </style>
+    </head>
+    <body>
+       <p>This is a styled paragraph. </p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Applying Classes
+    You can apply classes to paragraphs for unique styles. In this example, a class `special` is defined and applied to a paragraph.
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <style>
+          .special {
+             {{c1::font-size}}: 24px;
+             {{c2::color}}: #007bff;
+          }
+       </style>
+    </head>
+    <body>
+       <p class="{{c3::special}}">This is a special paragraph.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    Inline Styles
+    Inline styles can be used directly within the HTML to style individual paragraphs. In this example, inline CSS is used to style a paragraph.
+    
+    <!DOCTYPE html>
+    <html>
+    <body>
+       <p {{c1::style="font-size: 20px; color: green;"}}>This paragraph has inline styles.</p>
+    </body>
+    </html>
+
+
+### Basic Cards
+
+- type: basic
+  front: |
+    Why are fonts important in web design?
+  back: |
+    Fonts play a very important role in making a website more user-friendly and increasing content readability.
+
+- type: basic
+  front: |
+    What is the purpose of the HTML `<font>` tag?
+  back: |
+    The `<font>` tag is used to add style, size, and color to the text on a website.
+
+- type: basic
+  front: |
+    What are the three attributes of the HTML `<font>` tag?
+  back: |
+    The three attributes of the HTML `<font>` tag are `size`, `color`, and `face`.
+
+- type: basic
+  front: |
+    What is the purpose of the `<basefont>` tag in HTML?
+  back: |
+    The `<basefont>` tag is used to set all the text on a webpage to the same size, face, and color.
+
+- type: basic
+  front: |
+    Why should the `<font>` and `<basefont>` tags not be used in modern HTML?
+  back: |
+    The `<font>` and `<basefont>` tags are deprecated and should not be used in modern HTML. CSS styles should be used instead to manipulate fonts.
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    Fonts play a very important role in making a website more {{c1::user-friendly}} and increasing content {{c2::readability}}.
+
+- type: cloze
+  text: |
+    The `<font>` tag is used to add {{c1::style}}, {{c2::size}}, and {{c3::color}} to the text on a website.
+
+- type: cloze
+  text: |
+    The three attributes of the HTML `<font>` tag are {{c1::size}}, {{c2::color}}, and {{c3::face}}.
+
+- type: cloze
+  text: |
+    The `<basefont>` tag is used to set all text on a webpage to the same {{c1::size}}, {{c2::face}}, and {{c3::color}}.
+
+- type: cloze
+  text: |
+    The `<font>` and `<basefont>` tags are {{c1::deprecated}} and should not be used in modern HTML. Instead, it is recommended to use {{c2::CSS styles}} to manipulate fonts.
+
+
+### Cloze and Basic Cards for Font Size
+
+- type: basic
+  front: |
+    How do you set the font size in HTML using the `<font>` tag?
+  back: |
+    You set the font size using the `size` attribute, which can take values between 1 (smallest) and 7 (largest). The default size is 3.
+
+- type: cloze
+  text: |
+    The `size` attribute in the `<font>` tag can take values between {{c1::1}} (smallest) and {{c2::7}} (largest). The default font size is {{c3::3}}.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Setting Font Size</title>
+    </head>
+    <body>
+      <font {{c1::size = "1"}}>Font size = "1"</font><br />
+      <font {{c1::size = "2"}}>Font size = "2"</font><br />
+      <font {{c1::size = "3"}}>Font size = "3"</font><br />
+      <font {{c1::size = "4"}}>Font size = "4"</font><br />
+      <font {{c1::size = "5"}}>Font size = "5"</font><br />
+      <font {{c1::size = "6"}}>Font size = "6"</font><br />
+      <font {{c1::size = "7"}}>Font size = "7"</font>
+    </body>
+    </html>
+
+### Cloze and Basic Cards for Relative Font Size
+
+- type: basic
+  front: |
+    How can you specify relative font sizes in HTML?
+  back: |
+    You can specify relative font sizes using the `size` attribute with a `+n` or `-n` value. For example, `+1` increases the size and `-1` decreases the size relative to the base font size.
+
+- type: cloze
+  text: |
+    The `size` attribute can take relative values such as {{c1::+n}} to increase font size and {{c2::-n}} to decrease font size relative to the base size.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Relative Font Size</title>
+    </head>
+    <body>
+      <font {{c1::size = "-1"}}>Font size = "-1"</font><br />
+      <font {{c1::size = "+1"}}>Font size = "+1"</font><br />
+      <font {{c1::size = "+2"}}>Font size = "+2"</font><br />
+      <font {{c1::size = "+3"}}>Font size = "+3"</font><br />
+      <font {{c1::size = "+4"}}>Font size = "+4"</font>
+    </body>
+    </html>
+
+### Cloze and Basic Cards for Font Face
+
+- type: basic
+  front: |
+    What is the `face` attribute in the `<font>` tag used for?
+  back: |
+    The `face` attribute is used to set the font face (type) for the text, such as "Times New Roman" or "Verdana."
+
+- type: cloze
+  text: |
+    The `face` attribute in the `<font>` tag sets the font {{c1::face}} or type for the text.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Font Face</title>
+    </head>
+    <body>
+      <font {{c1::face = "Times New Roman"}} size = "5">Times New Roman</font><br />
+      <font {{c1::face = "Verdana"}} size = "5">Verdana</font><br />
+      <font {{c1::face = "Comic Sans MS"}} size = "5">Comic Sans MS</font><br />
+      <font {{c1::face = "WildWest"}} size = "5">WildWest</font><br />
+      <font {{c1::face = "Bedrock"}} size = "5">Bedrock</font>
+    </body>
+    </html>
+
+### Cloze and Basic Cards for Alternate Font Faces
+
+- type: basic
+  front: |
+    Why would you specify alternate font faces in HTML, and how do you do it?
+  back: |
+    You specify alternate font faces in case the user doesn't have the primary font installed. You do this by listing font face names separated by commas, such as `font face="arial,helvetica"`.
+
+- type: cloze
+  text: |
+    You can specify alternate font faces by listing font face names separated by {{c1::commas}}. If the first font is unavailable, the browser will use the next available font.
+
+- type: cloze
+  text: |
+    <font {{c1::face = "arial,helvetica"}}>Arial or Helvetica</font>
+    <font {{c1::face = "Lucida Calligraphy,Comic Sans MS,Lucida Console"}}>Lucida Calligraphy, Comic Sans MS, or Lucida Console</font>
+
+### Cloze and Basic Cards for Font Color
+
+- type: basic
+  front: |
+    How do you set the font color in HTML using the `<font>` tag?
+  back: |
+    You set the font color using the `color` attribute in the `<font>` tag, either by specifying the color name or the hexadecimal code.
+
+- type: cloze
+  text: |
+    You can set the font color using the `{{c1::color}}` attribute and specify either a color {{c2::name}} or a {{c3::hexadecimal}} code.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Setting Font Color</title>
+    </head>
+    <body>
+      <font {{c1::color = "#FF00FF"}}>This text is in pink</font><br />
+      <font {{c1::color = "red"}}>This text is red</font>
+    </body>
+    </html>
+
+
+### Basic and Cloze Cards for Block Elements
+
+- type: basic
+  front: |
+    What are block-level elements in HTML?
+  back: |
+    Block-level elements appear on the screen as if they have a line break before and after them. They are used to structure and organize content into meaningful sections.
+
+- type: basic
+  front: |
+    List some common block-level elements in HTML.
+  back: |
+    Common block-level elements include:
+    - `<div>`
+    - `<p>`
+    - `<h1>` to `<h6>`
+    - `<table>`
+    - `<form>`
+    - `<section>`
+    - `<ul>` and `<ol>`
+    - `<address>`, `<article>`, `<footer>`
+
+- type: cloze
+  text: |
+    Block-level elements in HTML appear as if they have a line break before and after them. They help to {{c1::organize}} the content into meaningful sections and improve the layout's {{c2::semantic structure}}.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML Block Level Elements</title>
+    </head>
+    <body>
+       <h3>HTML Block Level Elements</h3>
+       <p>
+          This line will appear in the next line
+          after Heading.
+       </p>
+       <hr>
+       <p>
+          This line will appear after Horizontal
+          Line.
+       </p>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for Inline Elements
+
+- type: basic
+  front: |
+    What are inline elements in HTML?
+  back: |
+    Inline elements can appear within the same line as other content and do not start a new line on their own.
+
+- type: basic
+  front: |
+    List some common inline elements in HTML.
+  back: |
+    Common inline elements include:
+    - `<a>`
+    - `<abbr>`
+    - `<b>`
+    - `<i>`
+    - `<img>`
+    - `<input>`
+    - `<span>`
+    - `<strong>`
+    - `<sub>` and `<sup>`
+
+- type: cloze
+  text: |
+    Inline elements in HTML can appear within the same line as other content and do not start a {{c1::new line}} on their own.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML Inline Elements</title>
+    </head>
+    <body>
+        <h3>Inline Elements in HTML</h3>
+        <!-- Using <b> inline element -->
+        <p>This {{c1::<b>}}paragraph{{c1::</b>}} is bold. </p>
+        <!-- Using <i> inline element -->
+        <p>This is an {{c2::<i>}}italic{{c2::</i>}} paragraph.</p>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for Grouping Using <div> Tag
+
+- type: basic
+  front: |
+    What is the purpose of the `<div>` tag in HTML?
+  back: |
+    The `<div>` tag is a block-level element used to group other HTML tags and apply CSS to groups of elements. It is also commonly used to create webpage layouts.
+
+- type: basic
+  front: |
+    What is the difference between the `<div>` tag and the `<span>` tag in HTML?
+  back: |
+    The `<div>` tag is used for grouping block-level elements, while the `<span>` tag is used for grouping inline elements.
+
+- type: cloze
+  text: |
+    The `<div>` tag is a block-level element used to group various HTML elements and apply {{c1::CSS}} to them. It is often used to create different parts of a webpage, such as {{c2::Left}}, {{c3::Right}}, and {{c4::Top}} sections.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML div Tag</title>
+    </head>
+    <body>
+       <!-- First group of tags -->
+       <div {{c1::style="color:red"}}>
+          <h4>This is first group</h4>
+          <p>Following is a list of vegetables</p>
+          <ul>
+             <li>Beetroot</li>
+             <li>Ginger</li>
+             <li>Potato</li>
+             <li>Radish</li>
+          </ul>
+       </div>
+       <!-- Second group of tags -->
+       <div {{c2::style="color:green"}}>
+          <h4>This is second group</h4>
+          <p>Following is a list of fruits</p>
+          <ul>
+             <li>Apple</li>
+             <li>Banana</li>
+             <li>Mango</li>
+             <li>Strawberry</li>
+          </ul>
+       </div>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for Grouping Using <span> Tag
+
+- type: basic
+  front: |
+    What is the purpose of the `<span>` tag in HTML?
+  back: |
+    The `<span>` tag is an inline element used to group inline elements in an HTML document. It is useful when applying CSS styles to parts of inline text.
+
+- type: cloze
+  text: |
+    The `<span>` tag is an inline element used to group {{c1::inline elements}} in an HTML document. Unlike the `<div>` tag, the `<span>` tag does not provide a {{c2::visual change}} but has more meaning when used with {{c3::CSS}}.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML span Tag</title>
+    </head>
+    <body>
+       <p>
+          This is <span {{c1::style="color:red"}}>red</span> 
+          and this is <span {{c2::style="color:green"}}>green</span>
+       </p>
+    </body>
+    </html>
+
+- type: basic
+  front: |
+    How do the `<span>` and `<div>` tags differ in their usage?
+  back: |
+    The `<span>` tag is used to group inline elements, while the `<div>` tag is used to group block-level elements.

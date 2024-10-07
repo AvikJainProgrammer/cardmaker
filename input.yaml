@@ -361,3 +361,254 @@
       {{c2::</ul>}}  
     </body>
     </html>
+
+- type: basic
+  front: |
+    What are HTML elements and how are they created?
+  back: |
+    HTML elements are the basic building blocks to create a web page. They are created with the help of an opening tag, content, and a closing tag.
+
+
+- type: basic
+  front: |
+    What do HTML elements specify in a document?
+  back: |
+    HTML elements specify how HTML documents should be built and what kind of content should be placed within various parts of an HTML document.
+
+
+- type: basic
+  front: |
+    What is an HTML element?
+  back: |
+    An HTML element is a fundamental component of an HTML document that can contain data to display on a webpage, such as text, image, link, or sometimes nothing.
+
+- type: basic
+  front: |
+    What does an HTML element include?
+  back: |
+    An HTML element includes an opening tag, content, and a closing tag. The opening tag may also include attributes.
+
+- type: basic
+  front: |
+    How is an HTML document structured?
+  back: |
+    An HTML document consists of a tree of HTML elements, which define the content and layout of a webpage, such as how and what content should be displayed in different sections.
+
+- type: basic
+  front: |
+    What is the relationship between HTML elements and HTML tags?
+  back: |
+    HTML elements are created using HTML tags. An HTML element consists of a pair of starting and closing tags with content between them, which defines the content and structure of the webpage.
+
+
+- type: basic
+  front: |
+    What is an HTML tag?
+  back: |
+    HTML tags are like keywords that are part of HTML elements. They are enclosed in angle brackets (<>).
+
+
+- type: basic
+  front: |
+    What is the difference between HTML elements and HTML tags?
+  back: |
+    HTML elements define the content and structure of the webpage with both starting and closing tags, whereas HTML tags are the individual components (keywords) that form the HTML elements.
+
+- type: basic
+  front: |
+    Give an example of an HTML element and its tags.
+  back: |
+    <p> is the starting tag of a paragraph, and </p> is the closing tag. Together, <p>This is paragraph</p> is a paragraph element.
+
+- type: basic
+  front: |
+    What is a nested HTML element?
+  back: |
+    A nested HTML element is created by placing one or more HTML elements inside another HTML element.
+
+- type: basic
+  front: |
+    What is a parent and child element in HTML?
+  back: |
+    The container element is considered the parent element, and the elements placed inside it are the child elements.
+
+- type: basic
+  front: |
+    Can HTML elements be nested at multiple levels?
+  back: |
+    Yes, HTML allows multiple levels of nesting of elements, where child elements are nested inside parent elements.
+
+- type: basic
+  front: |
+    What must you consider when nesting HTML elements?
+  back: |
+    While HTML allows multiple levels of nesting, it requires following certain guidelines to ensure proper structure and functionality.
+
+- type: basic
+  front: |
+    What are HTML void elements?
+  back: |
+    HTML void elements are elements that don't require closing tags. They are also known as empty or self-closing elements.
+
+- type: basic
+  front: |
+    Why are void elements called "empty" or "self-closing" elements?
+  back: |
+    Void elements are called "empty" or "self-closing" because they don't have content or require a closing tag.
+
+- type: basic
+  front: |
+    Can HTML void elements contain content or be nested?
+  back: |
+    No, HTML void elements don't have a content model and do not allow nesting of other elements.
+
+- type: basic
+  front: |
+    Name some common HTML void elements.
+  back: |
+    Some common HTML void elements are <img />, <hr />, and <br />.
+
+- type: basic
+  front: |
+    How are attributes placed in an HTML element?
+  back: |
+    Attributes are placed with an opening tag by using pairs of attribute names and values.
+
+- type: basic
+  front: |
+    How do you separate multiple attributes in an HTML element?
+  back: |
+    Multiple attributes can be separated with a space.
+
+- type: basic
+  front: |
+    Give an example of an HTML element with two attributes.
+  back: |
+    <img src="logo.jpg" alt="TutorialsPoint Logo" />
+
+- type: basic
+  front: |
+    Are HTML elements case-sensitive?
+  back: |
+    No, HTML elements are not case-sensitive, meaning they can be written in uppercase or lowercase.
+
+- type: basic
+  front: |
+    What does W3C recommend regarding the case of HTML tag names?
+  back: |
+    W3C recommends using lowercase for HTML tag names.
+
+- type: basic
+  front: |
+    Why should you use lowercase for HTML tag names?
+  back: |
+    While HTML elements are not case-sensitive, using lowercase is a good practice because W3C demands lowercase for consistency and readability.
+
+- type: basic
+  front: |
+    What are HTML attributes?
+  back: |
+    HTML attributes are special words that provide additional information to an HTML element. They are used to configure or adjust the element's behavior.
+
+- type: basic
+  front: |
+    Where are HTML attributes placed in an element?
+  back: |
+    HTML attributes are placed inside the element's opening tag.
+
+- type: basic
+  front: |
+    What are the two parts of an HTML attribute?
+  back: |
+    An HTML attribute consists of two parts: a name (attribute identifier) and a value.
+
+- type: basic
+  front: |
+    What is the purpose of the attribute name?
+  back: |
+    The attribute name is the keyword or identifier that defines a specific characteristic of the element in which it is used.
+
+- type: basic
+  front: |
+    What is the purpose of the attribute value?
+  back: |
+    The attribute value provides the data or information that defines the setting for the attribute. It is assigned within double quotes.
+
+- type: basic
+  front: |
+    Give an example of an HTML tag with an attribute.
+  back: |
+    An example of an HTML tag with an attribute is <p align="left">, where "align" is the attribute name and "left" is the value.
+
+- type: basic
+  front: |
+    Are HTML attributes mandatory to use with elements?
+  back: |
+    No, HTML attributes are optional and can be used to provide additional information about an HTML element.
+
+- type: basic
+  front: |
+    What is a Boolean attribute in HTML?
+  back: |
+    A Boolean attribute is an attribute that does not require a value. It is either present or absent, indicating a true or false state.
+
+- type: basic
+  front: |
+    How should multiple HTML attributes be separated?
+  back: |
+    Multiple HTML attributes should be separated by spaces.
+
+- type: basic
+  front: |
+    Where should HTML attributes be written in an element?
+  back: |
+    HTML attributes should always be written inside the opening tag.
+
+- type: basic
+  front: |
+    Can all HTML elements have attributes?
+  back: |
+    No, not all HTML elements can have attributes. Elements like <head> and <title> do not have attributes.
+
+- type: basic
+  front: |
+    What are W3C's recommendations for writing HTML attributes?
+  back: |
+    W3C recommends writing attributes in lowercase and keeping the attribute values inside quotes.
+
+- type: basic
+  front: |
+    Write html code to demonstrate attributes.
+  back: |
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Example of HTML Attributes</title>
+    </head>
+
+    <body>
+        <p align="left">Left Aligned</p>
+        <p align="center">Center Aligned</p>
+        <p align="right">Right Aligned</p>
+    </body>
+
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Example of HTML Attributes</title>
+    </head>
+
+    <body>
+        <p {{c1::align="left"}}>Left Aligned</p>
+        <p {{c1::align="center"}}>Center Aligned</p>
+        <p {{c1::align="right"}}>Right Aligned</p>
+    </body>
+
+    </html>
+
