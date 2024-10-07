@@ -1770,3 +1770,497 @@
     How do the `<span>` and `<div>` tags differ in their usage?
   back: |
     The `<span>` tag is used to group inline elements, while the `<div>` tag is used to group block-level elements.
+
+### Basic and Cloze Cards for CSS Overview
+
+- type: basic
+  front: |
+    What is CSS and why is it important for web design?
+  back: |
+    CSS, or Cascading Style Sheets, defines how web documents look on screens or in print. It allows for flexible and efficient control over the presentation of content, making web design more dynamic.
+
+- type: basic
+  front: |
+    What are the two components of a CSS property declaration?
+  back: |
+    Each CSS property has a name and a value, separated by a colon (:). Each property declaration is separated by a semicolon (;).
+
+- type: cloze
+  text: |
+    CSS, or {{c1::Cascading Style Sheets}}, defines how web documents appear on screens, in print, or for accessibility. It makes web design more {{c2::flexible}} and {{c3::efficient}}.
+
+- type: cloze
+  text: |
+    Each CSS property consists of a {{c1::name}} and a {{c2::value}}, separated by a colon ({{c3:::}}), with each property declaration separated by a {{c4::semicolon}} ({{c5::;}}).
+
+### Basic and Cloze Cards for CSS Example
+
+- type: basic
+  front: |
+    What is the main difference between using the `<font>` tag and using CSS for styling?
+  back: |
+    The `<font>` tag is used for inline styling of text, while CSS can be used externally, internally, or inline to apply styles, providing more flexibility and better control over web design.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML CSS</title>
+    </head>
+    <body>
+       <p style="{{c1::color:green}};{{c2::font-size:24px}};">
+          Hello, World!
+       </p>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for CSS Types
+
+- type: basic
+  front: |
+    What does "cascading" in Cascading Style Sheets (CSS) mean?
+  back: |
+    Cascading means that styles applied to a parent element will also apply to all child elements within the parent, unless overridden by more specific styles.
+
+- type: basic
+  front: |
+    What are the three ways to include CSS in an HTML document?
+  back: |
+    The three ways to include CSS in an HTML document are:
+    - External CSS (using a separate .css file)
+    - Internal CSS (in the <style> tag within the HTML document's header)
+    - Inline CSS (directly within HTML elements using the `style` attribute)
+
+- type: cloze
+  text: |
+    Cascading in CSS means that a style applied to a {{c1::parent element}} will also apply to all {{c2::child elements}} within the parent unless overridden by more specific styles.
+
+- type: cloze
+  text: |
+    The three ways to include CSS in an HTML document are:
+    - {{c1::External CSS}}: A separate .css file included with the `<link>` tag
+    - {{c2::Internal CSS}}: CSS rules defined within the `<style>` tag in the header
+    - {{c3::Inline CSS}}: CSS rules defined directly in the HTML element using the `style` attribute
+
+### Basic and Cloze Cards for External CSS
+
+- type: basic
+  front: |
+    What is the main advantage of using external CSS?
+  back: |
+    External CSS allows you to define a style sheet that can be used across multiple HTML pages, making it easier to maintain and apply consistent styling.
+
+- type: basic
+  front: |
+    How do you include an external CSS file in an HTML document?
+  back: |
+    You include an external CSS file in an HTML document using the `<link>` tag in the `<head>` section of the HTML document, specifying the file's path.
+
+- type: cloze
+  text: |
+    To include an external CSS file, use the {{c1::<link>}} tag in the {{c2::<head>}} section of the HTML document. The CSS file extension is {{c3::.css}}.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML External CSS</title>
+       <link rel="stylesheet" type="text/css" href="{{c1::/html/style.css}}">
+    </head>
+    <body>
+       <p class="{{c2::red}}">This is red</p>
+       <p class="{{c3::thick}}">This is thick</p>
+       <p class="{{c4::green}}">This is green</p>
+       <p class="{{c5::thick}} {{c6::green}}">
+          This is thick and green
+       </p>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for Internal CSS
+
+- type: basic
+  front: |
+    When should you use internal CSS in an HTML document?
+  back: |
+    Internal CSS should be used when you want to apply style sheet rules to a single document only, without affecting other documents.
+
+- type: basic
+  front: |
+    Where is internal CSS placed within an HTML document?
+  back: |
+    Internal CSS is placed within the `<style>` tag in the `<head>` section of an HTML document.
+
+- type: cloze
+  text: |
+    Internal CSS rules are defined in the {{c1::<style>}} tag, located in the {{c2::<head>}} section of the HTML document.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML Internal CSS</title>
+       <style type="text/css">
+          .{{c1::red}} {
+             color: red;
+          }
+          .{{c2::thick}} {
+             font-size: 20px;
+          }
+          .{{c3::green}} {
+             color: green;
+          }
+       </style>
+    </head>
+    <body>
+       <p class="red">This is red</p>
+       <p class="thick">This is thick</p>
+       <p class="green">This is green</p>
+       <p class="thick green">
+          This is thick and green
+       </p>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for Inline CSS
+
+- type: basic
+  front: |
+    When should you use inline CSS in an HTML document?
+  back: |
+    Inline CSS should be used when you want to apply specific styles to a single HTML element only, without affecting the rest of the document.
+
+- type: basic
+  front: |
+    How do you apply inline CSS to an HTML element?
+  back: |
+    Inline CSS is applied using the `style` attribute directly within the relevant HTML tag.
+
+- type: cloze
+  text: |
+    Inline CSS is applied directly to an HTML element using the {{c1::style}} attribute inside the opening tag.
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML Inline CSS</title>
+    </head>
+    <body>
+       <p {{c1::style="color:red;"}}>This is red</p>
+       <p {{c2::style="font-size:20px;"}}>This is thick</p>
+       <p {{c3::style="color:green;"}}>This is green</p>
+       <p {{c4::style="color:green;font-size:20px;"}}>
+          This is thick and green
+       </p>
+    </body>
+    </html>
+
+### Basic and Cloze Cards for HTML Formatting Overview
+
+- type: basic
+  front: |
+    What is HTML formatting, and why is it important?
+  back: |
+    HTML formatting refers to the way textual content is represented on a website to make it easier for users to navigate. It also helps search engines understand the structure of the content.
+
+- type: basic
+  front: |
+    What are the two types of HTML formatting tags?
+  back: |
+    The two types of HTML formatting tags are:
+    - Physical tags: Provide visual appearance to the text.
+    - Logical tags: Provide semantic meaning to the text.
+
+- type: cloze
+  text: |
+    HTML formatting is important because it helps make the website more {{c1::user-friendly}} and easier for {{c2::search engines}} to crawl. It improves both the visual appearance and the semantic structure of the content.
+
+- type: cloze
+  text: |
+    The two types of HTML formatting tags are:
+    - {{c1::Physical tags}}: Used to give the visual appearance to the text.
+    - {{c2::Logical tags}}: Used to give the logical and semantic meaning to the text.
+
+### Basic and Cloze Cards for HTML Formatting Tags
+
+- type: basic
+  front: |
+    What is the difference between the `<b>` and `<strong>` tags?
+  back: |
+    The `<b>` tag is a physical tag used to make text bold, while the `<strong>` tag is a logical tag used to indicate importance, but it also makes the text bold.
+
+- type: basic
+  front: |
+    What are the purposes of the `<sup>` and `<sub>` tags in HTML?
+  back: |
+    The `<sup>` tag is used to make text appear as superscript (slightly above the normal line), while the `<sub>` tag is used to make text appear as subscript (slightly below the normal line).
+
+- type: cloze
+  text: |
+    The `<b>` tag is used to make text {{c1::bold}}, while the `<strong>` tag indicates importance and also makes text {{c2::bold}}.
+
+- type: cloze
+  text: |
+    The `<sup>` tag makes text appear as {{c1::superscript}}, while the `<sub>` tag makes text appear as {{c2::subscript}}.
+
+### Basic and Cloze Cards for HTML Formatting Tag Functions
+
+- type: basic
+  front: |
+    What does the `<i>` tag do in HTML, and what is its logical equivalent?
+  back: |
+    The `<i>` tag is a physical tag used to make text italic, and its logical equivalent is the `<em>` tag, which also makes text italic but emphasizes the content.
+
+- type: basic
+  front: |
+    Which HTML tag is used to mark added content, and which tag is used to mark deleted content?
+  back: |
+    The `<ins>` tag is used to mark added content, and the `<del>` tag is used to mark deleted content.
+
+- type: cloze
+  text: |
+    The `<i>` tag is used to make text {{c1::italic}}, while the `<em>` tag also makes text italic but provides {{c2::emphasis}}.
+
+- type: cloze
+  text: |
+    The `<ins>` tag is used to mark {{c1::added content}}, while the `<del>` tag is used to mark {{c2::deleted content}}.
+
+### Cloze Cards for HTML Formatting Examples
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>HTML Formatting</title>
+    </head>
+    <body>
+       <p>This is <b>{{c1::bold text}}</b>.</p>
+       <p>This is <i>{{c2::italic text}}</i>.</p>
+       <p>This is <sup>{{c3::superscript text}}</sup>.</p>
+       <p>This is <sub>{{c4::subscript text}}</sub>.</p>
+       <p>This is <u>{{c5::underlined text}}</u>.</p>
+       <p>This is <mark>{{c6::marked text}}</mark>.</p>
+    </body>
+    </html>
+
+
+### Cloze Cards for HTML Formatting Tags
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Bold Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<b>}}bold{{c1::</b>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Strong Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<strong>}}strong{{c1::</strong>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Italic Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<i>}}italicized{{c1::</i>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Emphasized Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<em>}}emphasized{{c1::</em>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Larger Text Example</title>
+    </head>
+    <body>
+       <p>Hello Welcome to {{c1::<big>}}Tutorialspoint{{c1::</big>}}.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Smaller Text Example</title>
+    </head>
+    <body>
+       <p>Hello Welcome to {{c1::<small>}}Tutorialspoint{{c1::</small>}}.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Superscript Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<sup>}}superscript{{c1::</sup>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Subscript Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<sub>}}subscript{{c1::</sub>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Inserted Text Example</title>
+    </head>
+    <body>
+       <p>I want to drink <del>cola</del> {{c1::<ins>}}wine{{c1::</ins>}}</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Deleted Text Example</title>
+    </head>
+    <body>
+       <p>Hello welcome to <del>Madras</del> {{c1::<ins>}}Chennai{{c1::</ins>}}</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Underlined Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<u>}}underlined{{c1::</u>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Strike Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<strike>}}strikethrough{{c1::</strike>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Marked Text Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<mark>}}marked{{c1::</mark>}} typeface.</p>
+    </body>
+    </html>
+
+- type: cloze
+  text: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+       <title>Monospaced Font Example</title>
+    </head>
+    <body>
+       <p>The following word uses a {{c1::<tt>}}monospaced{{c1::</tt>}} typeface.</p>
+    </body>
+    </html>
+
+### Basic Cards
+
+- type: basic
+  front: |
+    What is the purpose of quotations in HTML?
+  back: |
+    Quotations in HTML are used to include and format quoted text within web content, ensuring proper formatting and semantics to enhance the presentation and meaning of the content.
+
+- type: basic
+  front: |
+    Why is it important to use quotation tags in HTML?
+  back: |
+    Quotation tags help maintain proper formatting and semantics, ensuring a well-organized and accurate presentation of quoted content on web pages.
+
+- type: basic
+  front: |
+    List some HTML tags used for quotations.
+  back: |
+    - `<q>`: For inline quotations
+    - `<blockquote>`: For block quotations
+    - `<cite>`: For citing references
+    - `<address>`: For contact information
+    - `<bdo>`: For bidirectional text
+    - `<abbr>`: For abbreviations
+
+### Cloze Cards
+
+- type: cloze
+  text: |
+    Quotations in HTML are used to include and format {{c1::quoted text}} within web content, ensuring proper formatting and {{c2::semantics}}.
+
+- type: cloze
+  text: |
+    Quotation tags help maintain proper {{c1::formatting}} and {{c2::semantics}}, ensuring a well-organized and accurate presentation of quoted content.
+
+- type: cloze
+  text: |
+    Some common HTML tags used for quotations include:
+    - {{c1::<q>}}: For inline quotations
+    - {{c2::<blockquote>}}: For block quotations
+    - {{c3::<cite>}}: For citing references
+    - {{c4::<address>}}: For contact information
+    - {{c5::<bdo>}}: For bidirectional text
+    - {{c6::<abbr>}}: For abbreviations
