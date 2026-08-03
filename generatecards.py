@@ -491,49 +491,92 @@ def _code_fib_model():
 
 
 def _write_code_model():
-    js = _read_qt_js('write_code')
-
     qfmt = _card(
         '  <div id="wc-qt" style="display:none">{{QuestionText}}</div>\n'
         '  <div id="wc-code" style="display:none">{{QuestionCode}}</div>\n'
-        '  <div id="wc-lang" style="display:none">{{Language}}</div>\n'
         '  <div id="wc-cs" style="display:none">{{CaseSensitive}}</div>\n'
         '  <div id="wc-guided" style="display:none">{{Guided}}</div>\n',
-        'wc-container', js,
+        'wc-container', '',
         "(function() {\n"
-        "  var q = {\n"
-        "    question_id: '',\n"
-        "    question_text: document.getElementById('wc-qt').textContent,\n"
-        "    question_code: document.getElementById('wc-code').textContent,\n"
-        "    language: document.getElementById('wc-lang').textContent.trim(),\n"
-        "    case_sensitive: document.getElementById('wc-cs').textContent.trim() === 'true',\n"
-        "    guided: document.getElementById('wc-guided').textContent.trim() === 'true'\n"
-        "  };\n"
-        "  document.getElementById('wc-container').appendChild(renderWriteCode(q));\n"
-        "})();"
+        "  var questionText = document.getElementById('wc-qt').textContent;\n"
+        "  var expectedCode = document.getElementById('wc-code').textContent.trim();\n"
+        "  var isCaseSensitive = document.getElementById('wc-cs').textContent.trim() === 'true';\n"
+        "  var guided = document.getElementById('wc-guided').textContent.trim() === 'true';\n"
+        "  \n"
+        "  var container = document.getElementById('wc-container');\n"
+        "  var label = document.createElement('div');\n"
+        "  label.innerHTML = 'Q: ' + questionText;\n"
+        "  label.style.marginBottom = '0.5em';\n"
+        "  container.appendChild(label);\n"
+        "  \n"
+        "  var textarea = document.createElement('textarea');\n"
+        "  textarea.style.width = '100%';\n"
+        "  textarea.style.height = '170px';\n"
+        "  textarea.style.marginTop = '10px';\n"
+        "  textarea.style.background = '#1e1e1e';\n"
+        "  textarea.style.color = '#d4d4d4';\n"
+        "  textarea.style.border = '1px solid #555';\n"
+        "  textarea.style.borderRadius = '5px';\n"
+        "  textarea.style.padding = '10px';\n"
+        "  textarea.style.fontFamily = 'monospace';\n"
+        "  textarea.style.fontSize = '0.93em';\n"
+        "  textarea.placeholder = 'Write your code here...';\n"
+        "  container.appendChild(textarea);\n"
+        "  \n"
+        "  var resultDiv = document.createElement('div');\n"
+        "  resultDiv.style.marginTop = '0.5em';\n"
+        "  resultDiv.style.fontSize = '1.1em';\n"
+        "  container.appendChild(resultDiv);\n"
+        "  \n"
+        "  function validate() {\n"
+        "    var userCode = textarea.value.trim();\n"
+        "    var userForCompare = isCaseSensitive ? userCode : userCode.toLowerCase();\n"
+        "    var expectedForCompare = isCaseSensitive ? expectedCode : expectedCode.toLowerCase();\n"
+        "    resultDiv.innerHTML = '';\n"
+        "    if (guided && expectedForCompare.startsWith(userForCompare) && userCode) {\n"
+        "      var hint = document.createElement('span');\n"
+        "      hint.textContent = '👍 Keep going...';\n"
+        "      hint.style.color = '#ff0';\n"
+        "      resultDiv.appendChild(hint);\n"
+        "    }\n"
+        "    if (userForCompare === expectedForCompare) {\n"
+        "      var tick = document.createElement('span');\n"
+        "      tick.textContent = '✔️ Correct!';\n"
+        "      tick.style.color = 'lightgreen';\n"
+        "      resultDiv.appendChild(tick);\n"
+        "    }\n"
+        "  }\n"
+        "  textarea.addEventListener('input', validate);\n"
+        "})();\n",
+        use_marked=False
     )
 
     afmt = _card(
         '  <div id="wc-qt-b" style="display:none">{{QuestionText}}</div>\n'
-        '  <div id="wc-code-b" style="display:none">{{QuestionCode}}</div>\n'
-        '  <div id="wc-lang-b" style="display:none">{{Language}}</div>\n'
-        '  <div id="wc-cs-b" style="display:none">{{CaseSensitive}}</div>\n'
-        '  <div id="wc-guided-b" style="display:none">{{Guided}}</div>\n',
-        'wc-container-b', js,
+        '  <div id="wc-code-b" style="display:none">{{QuestionCode}}</div>\n',
+        'wc-container-b', '',
         "(function() {\n"
-        "  var q = {\n"
-        "    question_id: '',\n"
-        "    question_text: document.getElementById('wc-qt-b').textContent,\n"
-        "    question_code: document.getElementById('wc-code-b').textContent,\n"
-        "    language: document.getElementById('wc-lang-b').textContent.trim(),\n"
-        "    case_sensitive: document.getElementById('wc-cs-b').textContent.trim() === 'true',\n"
-        "    guided: document.getElementById('wc-guided-b').textContent.trim() === 'true'\n"
-        "  };\n"
-        "  var node = renderWriteCode(q);\n"
-        "  document.getElementById('wc-container-b').appendChild(node);\n"
-        "  var btn = node.querySelector('button');\n"
-        "  if (btn) setTimeout(function() { btn.click(); }, 0);\n"
-        "})();"
+        "  var questionText = document.getElementById('wc-qt-b').textContent;\n"
+        "  var expectedCode = document.getElementById('wc-code-b').textContent.trim();\n"
+        "  \n"
+        "  var container = document.getElementById('wc-container-b');\n"
+        "  var label = document.createElement('div');\n"
+        "  label.innerHTML = 'Q: ' + questionText;\n"
+        "  label.style.marginBottom = '0.5em';\n"
+        "  container.appendChild(label);\n"
+        "  \n"
+        "  container.appendChild(document.createElement('hr'));\n"
+        "  \n"
+        "  var codeBlock = document.createElement('pre');\n"
+        "  codeBlock.textContent = expectedCode;\n"
+        "  codeBlock.style.background = '#1e1e1e';\n"
+        "  codeBlock.style.color = '#d4d4d4';\n"
+        "  codeBlock.style.padding = '10px';\n"
+        "  codeBlock.style.borderRadius = '5px';\n"
+        "  codeBlock.style.overflow = 'auto';\n"
+        "  container.appendChild(codeBlock);\n"
+        "})();\n",
+        use_marked=False
     )
 
     return genanki.Model(
