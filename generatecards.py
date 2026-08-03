@@ -491,25 +491,58 @@ def _code_fib_model():
 
 
 def _write_code_model():
-    front = (
-        '<div class="card">'
-        '<div class="question">{{QuestionText}}</div>'
-        '<textarea style="width:100%;height:170px;margin-top:10px;background:#1e1e1e;'
-        'color:#d4d4d4;border:1px solid #555;border-radius:5px;padding:10px;'
-        'font-family:monospace;font-size:0.93em;" placeholder="Write your code here..."></textarea>'
-        '</div>'
+    js = _read_qt_js('write_code')
+
+    qfmt = _card(
+        '  <div id="wc-qt" style="display:none">{{QuestionText}}</div>\n'
+        '  <div id="wc-code" style="display:none">{{QuestionCode}}</div>\n'
+        '  <div id="wc-lang" style="display:none">{{Language}}</div>\n'
+        '  <div id="wc-cs" style="display:none">{{CaseSensitive}}</div>\n'
+        '  <div id="wc-guided" style="display:none">{{Guided}}</div>\n',
+        'wc-container', js,
+        "(function() {\n"
+        "  var q = {\n"
+        "    question_id: '',\n"
+        "    question_text: document.getElementById('wc-qt').textContent,\n"
+        "    question_code: document.getElementById('wc-code').textContent,\n"
+        "    language: document.getElementById('wc-lang').textContent.trim(),\n"
+        "    case_sensitive: document.getElementById('wc-cs').textContent.trim() === 'true',\n"
+        "    guided: document.getElementById('wc-guided').textContent.trim() === 'true'\n"
+        "  };\n"
+        "  document.getElementById('wc-container').appendChild(renderWriteCode(q));\n"
+        "})();"
     )
-    back = (
-        '<div class="card">'
-        '<div class="question">{{QuestionText}}</div>'
-        '<hr>'
-        '<pre class="code-block">{{QuestionCode}}</pre>'
-        '</div>'
+
+    afmt = _card(
+        '  <div id="wc-qt-b" style="display:none">{{QuestionText}}</div>\n'
+        '  <div id="wc-code-b" style="display:none">{{QuestionCode}}</div>\n'
+        '  <div id="wc-lang-b" style="display:none">{{Language}}</div>\n'
+        '  <div id="wc-cs-b" style="display:none">{{CaseSensitive}}</div>\n'
+        '  <div id="wc-guided-b" style="display:none">{{Guided}}</div>\n',
+        'wc-container-b', js,
+        "(function() {\n"
+        "  var q = {\n"
+        "    question_id: '',\n"
+        "    question_text: document.getElementById('wc-qt-b').textContent,\n"
+        "    question_code: document.getElementById('wc-code-b').textContent,\n"
+        "    language: document.getElementById('wc-lang-b').textContent.trim(),\n"
+        "    case_sensitive: document.getElementById('wc-cs-b').textContent.trim() === 'true',\n"
+        "    guided: document.getElementById('wc-guided-b').textContent.trim() === 'true'\n"
+        "  };\n"
+        "  var node = renderWriteCode(q);\n"
+        "  document.getElementById('wc-container-b').appendChild(node);\n"
+        "  var btn = node.querySelector('button');\n"
+        "  if (btn) setTimeout(function() { btn.click(); }, 0);\n"
+        "})();"
     )
+
     return genanki.Model(
         _MODEL_IDS['write_code'], 'SimpleLearner — Write Code',
-        fields=[{'name': 'QuestionText'}, {'name': 'QuestionCode'}, {'name': 'Language'}],
-        templates=[{'name': 'Card', 'qfmt': front, 'afmt': back}],
+        fields=[
+            {'name': 'QuestionText'}, {'name': 'QuestionCode'},
+            {'name': 'Language'}, {'name': 'CaseSensitive'}, {'name': 'Guided'},
+        ],
+        templates=[{'name': 'Card', 'qfmt': qfmt, 'afmt': afmt}],
         css=_CSS,
     )
 
@@ -618,6 +651,8 @@ def _note_write_code(q, m):
             _md(q.get('question_text', '')),
             _esc(q.get('question_code', '')),
             _esc(str(q.get('language', 'python'))),
+            'true' if q.get('case_sensitive') else 'false',
+            'true' if q.get('guided') else 'false',
         ],
     )
 
